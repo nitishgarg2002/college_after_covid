@@ -17,7 +17,7 @@ function Order() {
             <Col>
               <Form.Group controlId="exampleForm.ControlSelect2">
                 <Form.Label>Order From</Form.Label>
-                <Form.Control as="select" >
+                <Form.Control as="select">
                   <option>Canteen</option>
                   <option>G block</option>
                   <option>Jaggis</option>
@@ -37,7 +37,7 @@ function Order() {
             <Col>
               <Form.Group controlId="exampleForm.ControlSelect2">
                 <Form.Label>Hostel</Form.Label>
-                <Form.Control as="select" >
+                <Form.Control as="select">
                   {/* <option value="">Choose...</option> */}
                   <option value="A">A</option>
                   <option value="B">B</option>
@@ -48,25 +48,20 @@ function Order() {
               </Form.Group>
             </Col>
           </Row>
-          
+
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Item description</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
 
-       
-          
           <br />
           <Button variant="primary" type="submit">
             Order
           </Button>
         </Form>
-        
       </Container>
     </div>
   );
 }
 
 export default Order;
-
-

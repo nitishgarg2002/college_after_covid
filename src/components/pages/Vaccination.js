@@ -46,19 +46,19 @@ function Vaccination() {
           </Form.Row>
 
           <Form.Row>
-          <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Vaccination Report</Form.Label>
-                <Form.Control type="file" />
-              </Form.Group>
+            <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Vaccination Report</Form.Label>
+              <Form.Control type="file" />
+            </Form.Group>
           </Form.Row>
 
           <Form.Row>
             {/* <center> */}
-              <Form.Group as={Col}>
+            <Form.Group as={Col}>
               <Button variant="primary" type="submit">
                 Submit
               </Button>
-              </Form.Group>
+            </Form.Group>
             {/* </center> */}
           </Form.Row>
         </Form>
