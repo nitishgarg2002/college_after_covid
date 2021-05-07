@@ -4,36 +4,30 @@ import { Row, Card, Col, Container, Button } from "react-bootstrap";
 function Home() {
   return (
     <div>
-      <Container>
+      <Container className="mt-4">
         <Row>
           <Col>
-            <Card className="bg-success  ">
+            <Card className="bg-warning text-light mb-3 shadow-rg">
               <Card.Body>
                 <Row>
                   <Col>
                     <h3>Total Students Vaccinated</h3>
                   </Col>
-                  <Col>
-                    <img />
-                  </Col>
                 </Row>
-                <footer>123</footer>
+                <footer className="h4">123</footer>
               </Card.Body>
             </Card>
           </Col>
 
           <Col>
-            <Card className="bg-primary ">
+            <Card className="bg-info text-light mb-3 shadow-rg">
               <Card.Body>
                 <Row>
                   <Col>
-                    <h3>Total Students Vaccinated</h3>
-                  </Col>
-                  <Col>
-                    <img />
+                    <h3>Total Hostels Vaccinated</h3>
                   </Col>
                 </Row>
-                <footer>123</footer>
+                <footer className="h4">2</footer>
               </Card.Body>
             </Card>
           </Col>

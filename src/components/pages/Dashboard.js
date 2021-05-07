@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Container, Col, Row, ListGroup, Button } from "react-bootstrap";
+import { Col, ListGroup, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Arrival from "./Arrival";
@@ -12,62 +12,70 @@ function Dashboard() {
   const [route, setRoute] = useState("");
   return (
     <Row>
-      <Col sm={2}>
+      <Col sm={6} md={2} fluid className=" shadow-lg">
         <Router>
-          <ul>
+          <ul style={{ height: "window.innerHeight" }}>
             <Route
               render={({ history }) => (
-                <li
+                <ListGroup.Item
+                  type="button"
+                  className="h4 bg-dark text-light text-center mt-4 mb-5"
                   onClick={() => {
                     history.replace(`/`);
                     setRoute("");
                   }}
                 >
                   Home
-                </li>
+                </ListGroup.Item>
               )}
             />
             <Route
               render={({ history }) => (
-                <li
+                <ListGroup.Item
+                  type="button"
+                  className="h4 bg-dark text-light text-center mb-5"
                   onClick={() => {
                     history.replace(`/arrival`);
                     setRoute("arrival");
                   }}
                 >
                   Arrival
-                </li>
+                </ListGroup.Item>
               )}
             />
             <Route
               render={({ history }) => (
-                <li
+                <ListGroup.Item
+                  type="button"
+                  className="h4 bg-dark text-light text-center mb-5"
                   onClick={() => {
                     history.replace(`/order`);
                     setRoute("order");
                   }}
                 >
                   Order
-                </li>
+                </ListGroup.Item>
               )}
             />
             <Route
               render={({ history }) => (
-                <li
+                <ListGroup.Item
+                  type="button"
+                  className="h4 bg-dark text-light text-center mb-5"
                   onClick={() => {
                     history.replace(`/vaccination`);
                     setRoute("vaccination");
                   }}
                 >
-                  vaccination
-                </li>
+                  Vaccination
+                </ListGroup.Item>
               )}
             />
           </ul>
         </Router>
       </Col>
 
-      <Col>
+      <Col style={{ height: "100vh" }} className="shadow-lg">
         {route === "" ? <Home /> : <div></div>}
         {route === "arrival" ? <Arrival /> : <div></div>}
         {route === "order" ? <Order /> : <div></div>}
