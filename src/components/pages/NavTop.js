@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavDropdown, Nav, Navbar } from 'react-bootstrap';
+import React from "react";
+import { NavDropdown, Nav, Navbar } from "react-bootstrap";
 function Home() {
   return (
     <div>

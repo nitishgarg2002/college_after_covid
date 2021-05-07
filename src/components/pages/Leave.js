@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Leave() {
-    return (
-        <div>
-            <h1>
-                Leave
-            </h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Leave</h1>
+    </div>
+  );
 }
 
 export default Leave;

@@ -19,7 +19,7 @@ function Arrival() {
             </Form.Group>
           </Row>
           <Row>
-            <Form.Group as={Col}controlId="formBasicEmail">
+            <Form.Group as={Col} controlId="formBasicEmail">
               <Form.Label>City</Form.Label>
               <Form.Control type="text" placeholder="Enter city" />
             </Form.Group>
@@ -45,10 +45,7 @@ function Arrival() {
               {" "}
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Contact Number</Form.Label>
-                <Form.Control
-                  type="number"
-                  placeholder="Contact Details"
-                />
+                <Form.Control type="number" placeholder="Contact Details" />
               </Form.Group>
             </Col>
           </Row>
