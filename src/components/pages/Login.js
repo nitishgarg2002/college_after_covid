@@ -1,29 +1,22 @@
-import React, { useState } from "react";
-import {
-  Card,
-  Form,
-  Button,
-  ListItem,
-  ListGroup,
-  Row,
-  Col,
-} from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Card, Form, Button, ListGroup, Row, Col } from "react-bootstrap";
 import NavTop from "./NavTop";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const handleRegister = () => {
     setIsLogin((prev) => !prev);
   };
-
+  const [response, setResponse] = useState(true);
+  const [role, setRole] = useState("user");
   const SignIn = () => (
     <>
-      <div className=" mt-5 align-items-center d-flex justify-content-center">
+      <div className=" mt-5 d-flex justify-content-center">
         {" "}
         <Card
           style={{
-            backgroundColor: "black",
-            width: "30vw",
+            backgroundColor: "#292B2C",
+            width: "45rem",
             content: "center",
           }}
           text="white"
@@ -31,7 +24,11 @@ const Login = () => {
           <Row>
             <Col>
               <ListGroup.Item
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{
+                  backgroundColor: "#292B2C",
+                  color: "white",
+                  borderBlockColor: "black",
+                }}
               >
                 {" "}
                 <Card.Header
@@ -44,7 +41,11 @@ const Login = () => {
             </Col>
             <Col>
               <ListGroup.Item
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{
+                  backgroundColor: "#292B2C",
+                  color: "white",
+                  borderBlockColor: "black",
+                }}
               >
                 {" "}
                 <Card.Header
@@ -73,9 +74,23 @@ const Login = () => {
             </Card.Title>
 
             <footer>
-              <Button variant="primary" className="mt-2" type="submit">
-                Log In
-              </Button>
+              <Route
+                render={({ history }) => (
+                  <Button
+                    className="mt-2"
+                    type="submit"
+                    onClick={() => {
+                      response
+                        ? role === "user"
+                          ? history.push("/home")
+                          : history.push("/AdminDashboard")
+                        : alert("user not valid");
+                    }}
+                  >
+                    Login
+                  </Button>
+                )}
+              />
             </footer>
           </Card.Body>
         </Card>
@@ -84,12 +99,12 @@ const Login = () => {
   );
   const Register = () => (
     <>
-      <div className=" mt-5 align-items-center d-flex justify-content-center">
+      <div className=" mt-5 d-flex justify-content-center">
         {" "}
         <Card
           style={{
-            backgroundColor: "black",
-            width: "30vw",
+            backgroundColor: "#292B2C",
+            width: "45rem",
             content: "center",
           }}
           text="white"
@@ -97,7 +112,11 @@ const Login = () => {
           <Row>
             <Col>
               <ListGroup.Item
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{
+                  backgroundColor: "#292B2C",
+                  color: "white",
+                  borderBlockColor: "black",
+                }}
               >
                 {" "}
                 <Card.Header
@@ -111,7 +130,11 @@ const Login = () => {
             </Col>
             <Col>
               <ListGroup.Item
-                style={{ backgroundColor: "black", color: "white" }}
+                style={{
+                  backgroundColor: "#292B2C",
+                  color: "white",
+                  borderBlockColor: "black",
+                }}
               >
                 {" "}
                 <Card.Header
@@ -151,9 +174,21 @@ const Login = () => {
             </Card.Title>
 
             <footer>
-              <Button variant="primary" className="mt-2" type="submit">
-                Register
-              </Button>
+              <Route
+                render={({ history }) => (
+                  <Button
+                    className="mt-2"
+                    type="submit"
+                    onClick={() => {
+                      response
+                        ? history.push("/home")
+                        : alert("user not valid");
+                    }}
+                  >
+                    Register
+                  </Button>
+                )}
+              />{" "}
             </footer>
           </Card.Body>
         </Card>
@@ -162,7 +197,11 @@ const Login = () => {
   );
   return (
     <div>
-      <NavTop isLoginPage={true} />
+      <NavTop
+        isLoginPage={true}
+        handleRegister={handleRegister}
+        setIsLogin={setIsLogin}
+      />
       {isLogin ? <SignIn /> : <Register />}
     </div>
   );
