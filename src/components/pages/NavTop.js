@@ -1,13 +1,14 @@
 import React from "react";
 import { NavDropdown, Button, Nav, Navbar, Container } from "react-bootstrap";
-function NavTop({ isLoggedin }) {
+function NavTop({ isLoggedin, isLoginPage }) {
   return (
     <div className="bg-dark">
       <Container className="container-fluid bg-dark">
         <Navbar collapseOnSelect expand="lg" variant="dark" bg="dark">
           <Navbar.Brand href="/">College-After-Covid</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
-          {isLoggedin ? (
+
+          {isLoginPage ? null : isLoggedin ? (
             <Button variant="danger" className="ml-5 shadow-none ">
               LogOut
             </Button>
