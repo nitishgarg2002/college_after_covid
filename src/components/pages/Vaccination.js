@@ -48,11 +48,13 @@ function Vaccination() {
           <Form.Row>
             <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
               <Form.Label>Vaccination Report</Form.Label>
-              <Form.Control type="file" />
+              <br />
+              <Form.Control className="ml-4" type="file" />
             </Form.Group>
           </Form.Row>
 
           <Form.Row>
+            <div style={{ height: "20px" }} />
             {/* <center> */}
             <Form.Group as={Col}>
               <Button variant="primary" type="submit">

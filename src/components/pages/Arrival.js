@@ -60,6 +60,7 @@ function Arrival() {
             <Col>
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Covid Report</Form.Label>
+                <br />
                 <Form.Control type="file" />
               </Form.Group>
             </Col>
