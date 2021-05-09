@@ -12,13 +12,36 @@
 <!-- #### Example: -->
 <!-- <h4>OnB</h4> -->
 <!-- This project is currently in development. Users can filter tweets by username and keyword and see visual data representation. Functionality to sort by additional parameters is in progress. -->
+<h3>Project Idea:</h3>
+<p>
+We are working on providing a database management system to the colleges once they open after the pandemic , with the help of which they will be able to precisely keep track of the vaccinated students, hostel sanitation and how much students they can accommodate, If social distancing is to be practised.
+</p>
+<h3>
+Future Scope:
+</h3>
+<p>
+When the colleges will reopen, then this can be used to track the number of hostel sanitised, to view the number of students arrived. Keeping in view the safety of the students and staff this can be used.
+</p>
 
 ## Project Screen Shot(s)
 
-#### Example:   
+#### Example:
+
 <h3>OnBoarding Page</h3>
 <p  >
-  <img src="./src/assets/onBoarding.png" width="350" title="hover text">
+  <img src="./src/assets/onBoarding.png" width="580" title="hover text">
+  <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
+</p>
+
+<h3>User Page</h3>
+<p  >
+  <img src="./src/assets/user-dash.png" width="580" title="hover text">
+  <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
+</p>
+
+<h3>Admin Page</h3>
+<p  >
+  <img src="./src/assets/admin-dash-1.png" width="580" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 <!-- [ PRETEND SCREEN SHOT IS HERE ] -->
@@ -26,28 +49,33 @@
 <!-- <img src="./src"> -->
 <!-- [ PRETEND OTHER SCREEN SHOT IS HERE ] -->
 
+<h3>Tech Stack:</h3>
+<p>Html, Css, Reactjs, Javascript, Bootstrap, Nodejs, Express, MongoDB
+</p>
+
 ## Installation and Setup Instructions
 
-#### Example:  
+#### Example:
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
 Installation:
 
-`npm install`  
+`npm install`
 
-To Run Test Suite:  
+To Run Test Suite:
 
-`npm test`  
+`npm test`
 
 To Start Server:
 
-`npm start`  
+`npm start`
 
 To Visit App:
 
-`localhost:3000/`  
-<!-- 
+`localhost:3000/`
+
+<!--
 ## Reflection
 
   - What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
@@ -57,11 +85,11 @@ To Visit App:
   - What tools did you use to implement this project?
       - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.   -->
 
-<!-- #### Example:  
+<!-- #### Example:
 
-This was a 3 week long project built during my third module at Turing School of Software and Design. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.  
+This was a 3 week long project built during my third module at Turing School of Software and Design. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
 
-Originally I wanted to build an application that allowed users to pull data from the Twitter API based on what they were interested in, such as 'most tagged users'. I started this process by using the `create-react-app` boilerplate, then adding `react-router-4.0` and `redux`.  
+Originally I wanted to build an application that allowed users to pull data from the Twitter API based on what they were interested in, such as 'most tagged users'. I started this process by using the `create-react-app` boilerplate, then adding `react-router-4.0` and `redux`.
 
 One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
 
