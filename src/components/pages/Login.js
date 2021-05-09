@@ -8,7 +8,7 @@ const Login = () => {
     setIsLogin((prev) => !prev);
   };
   const [response, setResponse] = useState(true);
-  const [role, setRole] = useState("user");
+  const [role, setRole] = useState("admin");
   const SignIn = () => (
     <>
       <div className=" mt-5 d-flex justify-content-center">
@@ -82,8 +82,8 @@ const Login = () => {
                     onClick={() => {
                       response
                         ? role === "user"
-                          ? history.push("/home")
-                          : history.push("/AdminDashboard")
+                          ? history.push("/User/Home")
+                          : history.push("/Admin/Home")
                         : alert("user not valid");
                     }}
                   >
@@ -180,9 +180,9 @@ const Login = () => {
                     className="mt-2"
                     type="submit"
                     onClick={() => {
-                      response
-                        ? history.push("/home")
-                        : alert("user not valid");
+                      role === "user"
+                        ? history.push("/User/Home")
+                        : history.push("/Admin/Home");
                     }}
                   >
                     Register

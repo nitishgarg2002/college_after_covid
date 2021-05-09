@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Table, Button, Container, Row, Col, Card } from "react-bootstrap";
+import ArrivalDetailsModal from "./ArrivalDetailsModal.js";
 
 function AdminArrival() {
   const [data_Hostel_A, setData_Hostel_A] = useState([
@@ -23,22 +24,26 @@ function AdminArrival() {
     },
   ]);
   const [arrival, setArrival] = useState("");
+  // const [show, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <div>
       {arrival === "" ? (
-        <Container>
+        <Container className="mt-5">
           <center>
             {" "}
             <h1
-              className="mt-4 mb-4"
+              className="mt-2 mb-5"
               style={{
                 fontFamily: "'Courier New', Courier, monospace",
                 fontWeight: "bold",
                 fontSize: "3rem",
               }}
             >
-              Vaccination Data
+              Student/Staff Arrival Information
             </h1>
           </center>
           <Row>
@@ -60,7 +65,7 @@ function AdminArrival() {
 
             <Col>
               <Card
-                className="bg-info text-light mb-3 shadow-rg"
+                className="bg-warning text-light mb-3 shadow-rg"
                 onClick={() => setArrival("B")}
               >
                 <Card.Body>
@@ -77,7 +82,7 @@ function AdminArrival() {
           <Row>
             <Col>
               <Card
-                className="bg-warning text-light mb-3 shadow-rg"
+                className="bg-info text-light mb-3 shadow-rg"
                 onClick={() => setArrival("C")}
               >
                 <Card.Body>
@@ -115,6 +120,7 @@ function AdminArrival() {
       {arrival === "A" ? (
         <>
           <Container>
+            {/* <ArrivalDetailsModal show={show} handleShow={handleShow} /> */}
             <center>
               {" "}
               <Button
@@ -153,6 +159,7 @@ function AdminArrival() {
                         <Button variant="outline-danger">Reject</Button>
                       </td>
                       <td>
+                        {/* <Button variant="outline-info" onClick={handleShow}> */}
                         <Button variant="outline-info">View Details</Button>
                       </td>
                     </tr>
@@ -168,6 +175,7 @@ function AdminArrival() {
       {arrival === "B" ? (
         <>
           <Container>
+            {/* <ArrivalDetailsModal show={show} handleShow={handleShow} /> */}
             <center>
               <Button
                 className="mt-4 mb-4"
@@ -205,6 +213,7 @@ function AdminArrival() {
                         <Button variant="outline-danger">Reject</Button>
                       </td>
                       <td>
+                        {/* <Button variant="outline-info" onClick={handleShow}> */}
                         <Button variant="outline-info">View Details</Button>
                       </td>
                     </tr>
@@ -220,6 +229,7 @@ function AdminArrival() {
       {arrival === "C" ? (
         <>
           <Container>
+            {/* <ArrivalDetailsModal show={show} handleShow={handleShow} /> */}
             <center>
               <Button
                 className="mt-4 mb-4"
@@ -257,6 +267,7 @@ function AdminArrival() {
                         <Button variant="outline-danger">Reject</Button>
                       </td>
                       <td>
+                        {/* <Button variant="outline-info" onClick={handleShow}> */}
                         <Button variant="outline-info">View Details</Button>
                       </td>
                     </tr>
@@ -272,6 +283,7 @@ function AdminArrival() {
       {arrival === "D" ? (
         <>
           <Container>
+            {/* <ArrivalDetailsModal show={show} handleShow={handleShow} /> */}
             <center>
               <Button
                 className="mt-4 mb-4"
@@ -309,6 +321,7 @@ function AdminArrival() {
                         <Button variant="outline-danger">Reject</Button>
                       </td>
                       <td>
+                        {/* <Button variant="outline-info" onClick={handleShow}> */}
                         <Button variant="outline-info">View Details</Button>
                       </td>
                     </tr>

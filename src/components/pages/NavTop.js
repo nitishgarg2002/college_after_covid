@@ -9,10 +9,23 @@ function NavTop({ isLoggedin, isLoginPage, handleRegister, setIsLogin }) {
           <Navbar.Brand href="/">College-After-Covid</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav"></Navbar.Collapse>
           {isLoginPage ? null : isLoggedin ? (
-            <Button variant="danger" className="ml-5 shadow-none ">
-              LogOut
-            </Button>
+            <Route
+              render={({ history }) => (
+                <Button
+                  className="ml-5 shadow-none "
+                  variant="danger"
+                  onClick={() => {
+                    history.push("/");
+                  }}
+                >
+                  LogOut
+                </Button>
+              )}
+            />
           ) : (
+            // <Button variant="danger" className="ml-5 shadow-none ">
+            //   LogOut
+            // </Button>
             <>
               <Navbar>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
