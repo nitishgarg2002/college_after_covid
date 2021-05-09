@@ -25,7 +25,7 @@ When the colleges will reopen, then this can be used to track the number of host
 
 ## Project Screen Shot(s)
 
-#### Example:
+<!-- #### Example: -->
 
 <h3>OnBoarding Page</h3>
 <p  >
@@ -52,6 +52,8 @@ When the colleges will reopen, then this can be used to track the number of host
 <h3>Tech Stack:</h3>
 <p>Html, Css, Reactjs, Javascript, Bootstrap, Nodejs, Express, MongoDB
 </p>
+<br>
+<br>
 
 ## Installation and Setup Instructions
 
