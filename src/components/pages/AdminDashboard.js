@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AdminHome from "./AdminHome";
 import AdminArrival from "./AdminArrival";
 import AdminHostel from "./AdminHostel";
+import NavTop from "./NavTop.js";
 
 function AdminDashboard() {
-  const [route, setRoute] = useState("home");
+  const [route, setRoute] = useState("AdminHome");
 
   return (
     <div>
+      <NavTop isLoggedin={true}/>
       <Row>
         <Col sm={12} md={2} className="justify-content-center shadow-lg">
           <Router>

@@ -5,7 +5,12 @@ function Arrival() {
   return (
     <div>
       <Container className="pt-2">
-        <h1>Arrival Form</h1>
+        <h1 className="mt-4 mb-4"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                // fontWeight: "bold",
+                fontSize: "3rem",
+              }}>Arrival Form</h1>
         <Form>
           <Row>
             <Form.Group as={Col} controlId="formBasicEmail">
@@ -65,7 +70,7 @@ function Arrival() {
               </Form.Group>
             </Col>
           </Row>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="mt-4" size="lg">
             Submit
           </Button>
         </Form>

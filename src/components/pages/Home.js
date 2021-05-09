@@ -24,7 +24,7 @@ function Home() {
               <Card.Body>
                 <Row>
                   <Col>
-                    <h3>Total Hostels Vaccinated</h3>
+                    <h3>Total Hostels Sanitized</h3>
                   </Col>
                 </Row>
                 <footer className="h4">2</footer>

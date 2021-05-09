@@ -3,80 +3,75 @@ import { Table, Button, Container, Row, Col, Card } from "react-bootstrap";
 function AdminVaccination() {
   const [student_Vaccination_data, setStudent_Vaccination_data] = useState([
     {
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "user",
-      },
+      uname: "Pratham Verma",
+      rollno: "102083034",
+      state: "Punjab",
+      hostel: "A",
+    }, {
+      uname: "Jatin Goyal",
+      rollno: "102083045",
+      state: "Punjab",
+      hostel: "B ",
+    },{
+      uname: "Nitish Garg",
+      rollno: "102084014",
+      state: "Haryana",
+      hostel: "A",
+    },{
+      uname: "Ajay Goyal",
+      rollno: "102084028",
+      state: "Delhi",
+      hostel: "C",
+    },
   ]);
   const [admin_Vaccination_data, setAdmin_Vaccination_data] = useState([
     {
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },{
-        uname: "abc",
-        email: "j@123",
-        password: "123",
-        role: "admin",
-      },
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
+    {
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
+    {
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
+    {
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
+    {
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
+    {
+      uname: "abc",
+      email: "j@123",
+      password: "123",
+      role: "admin",
+    },
   ]);
   const [showtable, setShowtable] = useState("");
   return (
     <div>
       {showtable === "" ? (
         <>
-          <Container>
+          <Container className="mt-5">
             <center>
               {" "}
               <h1
-                className="mt-4 mb-4"
+                className="mb-5"
                 style={{
                   fontFamily: "'Courier New', Courier, monospace",
                   fontWeight: "bold",
@@ -142,10 +137,10 @@ function AdminVaccination() {
             >
               <thead style={{ backgroundColor: "#E2E3E5" }}>
                 <tr>
-                  <th>Year</th>
-                  <th>Degree</th>
-                  <th>Institution</th>
-                  <th>CGPA/%</th>
+                  <th>Name</th>
+                  <th>Roll Number </th>
+                  <th>State</th>
+                  <th>Hostel Choice</th>
                 </tr>
               </thead>
               <tbody>
@@ -153,9 +148,9 @@ function AdminVaccination() {
                   return (
                     <tr>
                       <td>{data.uname}</td>
-                      <td>{data.email}</td>
-                      <td>{data.password}</td>
-                      <td>{data.role}</td>
+                      <td>{data.rollno}</td>
+                      <td>{data.state}</td>
+                      <td>{data.hostel}</td>
                     </tr>
                   );
                 })}

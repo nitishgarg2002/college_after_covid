@@ -26,7 +26,7 @@ function Dashboard() {
                       type="button"
                       className="h4 bg-dark text-center text-light  mt-4 mb-5"
                       onClick={() => {
-                        history.replace(`/home`);
+                        history.replace(`/User/Dashboard`);
                         setRoute("home");
                       }}
                     >
@@ -40,7 +40,7 @@ function Dashboard() {
                       type="button"
                       className="h4 bg-dark text-center text-light  mb-5"
                       onClick={() => {
-                        history.replace(`/arrival`);
+                        history.replace(`/User/Arrival`);
                         setRoute("arrival");
                       }}
                     >
@@ -54,7 +54,7 @@ function Dashboard() {
                       type="button"
                       className="h4 bg-dark text-center text-light  mb-5"
                       onClick={() => {
-                        history.replace(`/order`);
+                        history.replace(`/User/Order`);
                         setRoute("order");
                       }}
                     >
@@ -68,7 +68,7 @@ function Dashboard() {
                       type="button"
                       className="h4 bg-dark text-center text-light  mb-5"
                       onClick={() => {
-                        history.replace(`/vaccination`);
+                        history.replace(`/User/Vaccination`);
                         setRoute("vaccination");
                       }}
                     >

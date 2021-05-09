@@ -1,11 +1,26 @@
-import React from 'react'
-import { Container, Row, Col, Card} from 'react-bootstrap'
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 function AdminHome() {
-    return (
-        <div>
-            <Container>
-            <Row>
+  return (
+    <div>
+      <Container className="mt-4">
+        <Row>
+          <center>
+            <h1
+              className="mt-4 mb-4"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                fontWeight: "bold",
+                fontSize: "3rem",
+              }}
+            >
+              Admin Page
+            </h1>
+            <br />
+          </center>
+        </Row>
+        <Row>
           <Col>
             <Card className="bg-warning text-light mb-3 shadow-rg">
               <Card.Body>
@@ -14,7 +29,7 @@ function AdminHome() {
                     <h3>Total Students Vaccinated</h3>
                   </Col>
                 </Row>
-                <footer className="h4">123</footer>
+                <footer className="h4">158</footer>
               </Card.Body>
             </Card>
           </Col>
@@ -24,7 +39,7 @@ function AdminHome() {
               <Card.Body>
                 <Row>
                   <Col>
-                    <h3>Total Hostels Vaccinated</h3>
+                    <h3>Total Hostels Sanitized</h3>
                   </Col>
                 </Row>
                 <footer className="h4">2</footer>
@@ -47,28 +62,21 @@ function AdminHome() {
           </Col>
 
           <Col>
-            <Card className="bg-warning text-light mb-3 shadow-rg">
+            <Card className="bg-warning text-light mb-3 shadow-rg ">
               <Card.Body>
                 <Row>
                   <Col>
-                    <h3>Rooms Vacant</h3>
+                    <h3>Total Admin/Staff Vaccinated</h3>
                   </Col>
                 </Row>
-                <Row>
-                  <Col>
-                    <footer className="h4">Boys: 2</footer>
-                  </Col>
-                  <Col>
-                    <footer className="h4">Girls: 2</footer>
-                  </Col>
-                </Row>
+                <footer className="h4">15</footer>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-            </Container>
-        </div>
-    )
+      </Container>
+    </div>
+  );
 }
 
-export default AdminHome
+export default AdminHome;
