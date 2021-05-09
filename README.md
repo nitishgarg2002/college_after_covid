@@ -35,12 +35,12 @@ When the colleges will reopen, then this can be used to track the number of host
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 
-
+<!-- 
 <p align="center">
   <a href="https://github.com/Coder-Bhai/covid19-VijayApp">
     <img alt="Covid19-Vijay" src="./screenshots/header.png" width="100%" />
   </a>
-</p>
+</p> -->
 
 <h3>User Page</h3>
 <p  >
@@ -64,6 +64,13 @@ When the colleges will reopen, then this can be used to track the number of host
 <br>
 <br>
 
+<p align="center">
+  Show some love 💜 and Star ⭐️ the Repository to support the project.
+</p>
+
+
+
+
 ## :rocket: Installation and Setup Instructions
 
 #### Example:
@@ -75,9 +82,7 @@ You can get the College After Covid Web App up and running on your localhost in 
 ```npm install```
 3. **To Start Server:**
 ```npm start```
-
 4. **To Visit App:**
-
 ```localhost:3000/```
 
 ## :purple_heart: Thanks
