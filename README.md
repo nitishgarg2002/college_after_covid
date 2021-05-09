@@ -16,41 +16,35 @@
 <p>
 We are working on providing a database management system to the colleges once they open after the pandemic , with the help of which they will be able to precisely keep track of the vaccinated students, hostel sanitation and how much students they can accommodate, If social distancing is to be practised.
 </p>
-<h3>
-Future Scope:
-</h3>
-<p>
-When the colleges will reopen, then this can be used to track the number of hostel sanitised, to view the number of students arrived. Keeping in view the safety of the students and staff this can be used.
-</p>
-
 ## Project Screen Shot(s)
 
 <!-- #### Example: -->
 
 <h3>OnBoarding Page</h3>
-<p  >
-<center>
-</center>
-  <img src="./src/assets/onBoarding.png" width="700" title="hover text">
+<p align="center" >
+  <img src="./src/assets/onBoarding.png" width="100%" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 
-<!-- 
+
 <p align="center">
   <a href="https://github.com/Coder-Bhai/covid19-VijayApp">
     <img alt="Covid19-Vijay" src="./screenshots/header.png" width="100%" />
   </a>
-</p> -->
+</p>
 
 <h3>User Page</h3>
-<p  >
-  <img src="./src/assets/user-dash.png" width="700" title="hover text">
+<p  align="center">
+ <!-- <a href="https://github.com/Coder-Bhai/covid19-VijayApp"> -->
+    <!-- <img alt="Covid19-Vijay" src="./screenshots/header.png" width="100%" /> -->
+  <!-- </a> -->
+  <img src="./src/assets/user-dash.png" width="100%" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 
 <h3>Admin Page</h3>
-<p  >
-  <img src="./src/assets/admin-dash-1.png" width="700" title="hover text">
+<p  align="center">
+  <img src="./src/assets/admin-dash-1.png" width="100%" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 <!-- [ PRETEND SCREEN SHOT IS HERE ] -->
@@ -63,6 +57,15 @@ When the colleges will reopen, then this can be used to track the number of host
 </p>
 <br>
 <br>
+
+
+<h3>
+Future Scope:
+</h3>
+<p>
+When the colleges will reopen, then this can be used to track the number of hostel sanitised, to view the number of students arrived. Keeping in view the safety of the students and staff this can be used.
+</p>
+
 
 <p align="center">
   Show some love 💜 and Star ⭐️ the Repository to support the project.
