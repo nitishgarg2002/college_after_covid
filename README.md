@@ -29,19 +29,28 @@ When the colleges will reopen, then this can be used to track the number of host
 
 <h3>OnBoarding Page</h3>
 <p  >
-  <img src="./src/assets/onBoarding.png" width="580" title="hover text">
+<center>
+</center>
+  <img src="./src/assets/onBoarding.png" width="700" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
+</p>
+
+
+<p align="center">
+  <a href="https://github.com/Coder-Bhai/covid19-VijayApp">
+    <img alt="Covid19-Vijay" src="./screenshots/header.png" width="100%" />
+  </a>
 </p>
 
 <h3>User Page</h3>
 <p  >
-  <img src="./src/assets/user-dash.png" width="580" title="hover text">
+  <img src="./src/assets/user-dash.png" width="700" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 
 <h3>Admin Page</h3>
 <p  >
-  <img src="./src/assets/admin-dash-1.png" width="580" title="hover text">
+  <img src="./src/assets/admin-dash-1.png" width="700" title="hover text">
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 <!-- [ PRETEND SCREEN SHOT IS HERE ] -->
@@ -55,28 +64,25 @@ When the colleges will reopen, then this can be used to track the number of host
 <br>
 <br>
 
-## Installation and Setup Instructions
+## :rocket: Installation and Setup Instructions
 
 #### Example:
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+You can get the College After Covid Web App up and running on your localhost in 5 minutes with these four steps:
 
-Installation:
+1. **Clone down this repository. You will need `node` and `npm` installed globally on your machine.**
+2. **Installation:**
+```npm install```
+3. **To Start Server:**
+```npm start```
 
-`npm install`
+4. **To Visit App:**
 
-To Run Test Suite:
+```localhost:3000/```
 
-`npm test`
+## :purple_heart: Thanks
 
-To Start Server:
-
-`npm start`
-
-To Visit App:
-
-`localhost:3000/`
-
+Thanks to all contributors and to sponsors for supporting the project.
 <!--
 ## Reflection
 
