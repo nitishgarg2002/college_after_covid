@@ -17,10 +17,11 @@
 
 #### Example:   
 <h3>OnBoarding Page</h3>
+![Alt text](relative/src/assets/onBoarding.png?raw=true "Title")
 <!-- [ PRETEND SCREEN SHOT IS HERE ] -->
 
 <!-- <img src="./src"> -->
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+<!-- [ PRETEND OTHER SCREEN SHOT IS HERE ] -->
 
 ## Installation and Setup Instructions
 
