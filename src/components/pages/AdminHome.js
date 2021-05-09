@@ -1,10 +1,25 @@
 import React from "react";
-import { Row, Card, Col, Container, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-function Home() {
+function AdminHome() {
   return (
     <div>
       <Container className="mt-4">
+        <Row>
+          <center>
+            <h1
+              className="mt-4 mb-4"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                fontWeight: "bold",
+                fontSize: "3rem",
+              }}
+            >
+              Admin Page
+            </h1>
+            <br />
+          </center>
+        </Row>
         <Row>
           <Col>
             <Card className="bg-warning text-light mb-3 shadow-rg">
@@ -14,7 +29,7 @@ function Home() {
                     <h3>Total Students Vaccinated</h3>
                   </Col>
                 </Row>
-                <footer className="h4">123</footer>
+                <footer className="h4">158</footer>
               </Card.Body>
             </Card>
           </Col>
@@ -47,46 +62,21 @@ function Home() {
           </Col>
 
           <Col>
-            <Card className="bg-warning text-light mb-3 shadow-rg">
+            <Card className="bg-warning text-light mb-3 shadow-rg ">
               <Card.Body>
                 <Row>
                   <Col>
-                    <h3>Rooms Vacant</h3>
+                    <h3>Total Admin/Staff Vaccinated</h3>
                   </Col>
                 </Row>
-                <Row>
-                  <Col>
-                    <footer className="h4">Boys: 2</footer>
-                  </Col>
-                  <Col>
-                    <footer className="h4">Girls: 2</footer>
-                  </Col>
-                </Row>
+                <footer className="h4">15</footer>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-
-        <Col className="my-3">
-          <Card>
-            <Card.Body>
-              <Row>
-                <Col sm={10}>
-                  <h3>Recent Orders</h3>
-                </Col>
-                <Col sm={2}>
-                  <center>
-                    {" "}
-                    <Button className=" shadow-none ">View All</Button>
-                  </center>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
       </Container>
     </div>
   );
 }
 
-export default Home;
+export default AdminHome;
