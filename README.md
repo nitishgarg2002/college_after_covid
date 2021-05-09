@@ -26,12 +26,12 @@ We are working on providing a database management system to the colleges once th
   <!-- <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text"> -->
 </p>
 
-
+<!-- 
 <p align="center">
   <a href="https://github.com/Coder-Bhai/covid19-VijayApp">
     <img alt="Covid19-Vijay" src="./screenshots/header.png" width="100%" />
   </a>
-</p>
+</p> -->
 
 <h3>User Page</h3>
 <p  align="center">
@@ -55,9 +55,6 @@ We are working on providing a database management system to the colleges once th
 <h3>Tech Stack:</h3>
 <p>Html, Css, Reactjs, Javascript, Bootstrap, Nodejs, Express, MongoDB
 </p>
-<br>
-<br>
-
 
 <h3>
 Future Scope:
